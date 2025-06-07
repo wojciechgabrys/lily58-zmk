@@ -40,11 +40,11 @@
 
             display-name = "NUM NAV";
             bindings = <
-&trans     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                                       &trans     &trans     &trans           &trans    &trans    &trans
-&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                                 &kp F7     &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
-&kp GRAVE  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                                                    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&trans     &trans        &trans        &trans        &trans        &trans        &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                       &trans        &trans        &trans        &trans                  &trans                 &trans     &trans     &trans
+&trans     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                                       &kp F6          &kp F7          &kp F8        &kp F9        &kp F10       &trans
+&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                                 &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp DELETE
+&kp GRAVE  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                                                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT     &trans        &trans
+&trans     &trans        &trans        &trans        &trans        &trans        &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans          &trans          &trans        &trans        &trans        &trans
+                                       &trans        &trans        &trans        &trans                  &trans                 &trans          &trans          &trans
             >;
         };
 
@@ -68,12 +68,21 @@
 
         adj {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0           &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                             &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans                 &trans        &trans        &trans        &trans                                   &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp LS(LC(LA(LG(A))))  &trans        &trans        &trans        &kp LG(LC(LA(LS(G))))                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans                 &trans        &trans        &trans        &kp LG(LA(LC(LS(B))))  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                                 &trans        &trans        &trans                 &trans    &trans  &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0           &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                             &trans         &trans         &trans          &trans            &trans           &trans
+&trans      &trans                 &trans        &trans        &trans        &trans                                   &kp LC(LG(Q))  &kp LC(LG(W))  &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_NEXT       &trans
+&trans      &kp LS(LC(LA(LG(A))))  &trans        &trans        &trans        &kp LG(LC(LA(LS(G))))                    &kp LC(LG(H))  &kp LC(LG(J))  &kp LC(LG(K))   &kp LG(LC(L))     &kp K_VOL_UP     &kp K_MUTE
+&trans      &trans                 &trans        &trans        &trans        &kp LG(LA(LC(LS(B))))  &trans    &trans  &kp LC(LG(A))  &kp LG(LC(S))  &trans          &trans            &kp K_VOLUME_UP  &trans
+                                                 &trans        &trans        &trans                 &trans    &trans  &trans         &trans         &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        adjust {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
