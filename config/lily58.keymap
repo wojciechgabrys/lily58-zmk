@@ -8,7 +8,29 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+&mt {
+    tapping-term-ms = <300>;
+    quick-tap-ms = <200>;
+};
+
+&lt {
+    quick-tap-ms = <200>;
+    tapping-term-ms = <300>;
+};
+
 / {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -24,7 +46,7 @@
             bindings = <
 &kp ESC           &kp N1  &kp N2            &kp N3       &kp N4          &kp N5                                     &kp N6            &kp N7           &kp N8          &kp N9              &kp N0    &kp GRAVE
 &kp TAB           &kp Q   &kp W             &kp E        &kp R           &kp T                                      &kp Y             &kp U            &kp I           &kp O               &kp P     &kp BACKSPACE
-&mt LCTRL ESCAPE  &kp A   &mt LEFT_SHIFT S  &mt LCTRL D  &mt LEFT_ALT F  &mt LEFT_COMMAND G                         &mt LEFT_SHIFT H  &mt LCTRL J      &mt LEFT_ALT K  &mt LEFT_COMMAND L  &kp SEMI  &kp SQT
+&mt LCTRL ESCAPE  &kp A   &hm LEFT_SHIFT S  &mt LCTRL D  &mt LEFT_ALT F  &mt LEFT_COMMAND G                         &mt LEFT_SHIFT H  &mt LCTRL J      &mt LEFT_ALT K  &mt LEFT_COMMAND L  &kp SEMI  &kp SQT
 &kp LSHFT         &kp Z   &kp X             &kp C        &kp V           &kp B               &kp LBKT     &kp RBKT  &kp N             &kp M            &kp COMMA       &kp DOT             &kp FSLH  &kp RSHFT
                                             &kp LALT     &kp LGUI        &mo 1               &kp SPACE    &kp RET   &mo 2             &lt 2 BACKSPACE  &kp RGUI
             >;
