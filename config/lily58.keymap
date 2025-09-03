@@ -44,7 +44,7 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC           &kp N1  &kp N2            &kp N3       &kp N4          &kp N5                                     &kp N6            &kp N7        &kp N8          &kp N9              &kp N0    &kp GRAVE
+&gresc            &kp N1  &kp N2            &kp N3       &kp N4          &kp N5                                     &kp N6            &kp N7        &kp N8          &kp N9              &kp N0    &kp GRAVE
 &kp TAB           &kp Q   &kp W             &kp E        &kp R           &kp T                                      &kp Y             &kp U         &kp I           &kp O               &kp P     &kp BACKSPACE
 &mt LCTRL ESCAPE  &kp A   &hm LEFT_SHIFT S  &hm LCTRL D  &hm LEFT_ALT F  &hm LEFT_COMMAND G                         &hm LEFT_SHIFT H  &hm LCTRL J   &hm LEFT_ALT K  &hm LEFT_COMMAND L  &kp SEMI  &kp SQT
 &kp LSHFT         &kp Z   &kp X             &kp C        &kp V           &kp B               &kp LBKT     &kp RBKT  &kp N             &kp M         &kp COMMA       &kp DOT             &kp FSLH  &kp RSHFT
