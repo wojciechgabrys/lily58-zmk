@@ -87,6 +87,21 @@
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <31 32>;
         };
+
+        less_than {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <40 39>;
+        };
+
+        greater_than {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <45 46>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <22 21>;
+        };
     };
 
     keymap {
