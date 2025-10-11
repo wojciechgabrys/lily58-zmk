@@ -167,11 +167,11 @@
 
             display-name = "RIGHT";
             bindings = <
-&trans  &trans           &trans       &trans    &trans      &trans                         &trans          &trans         &trans         &trans                &trans                 &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp CARET       &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp GRAVE        &kp TILDE    &trans    &trans      &trans                         &kp MINUS       &kp PLUS       &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-&trans  &trans           &trans       &trans    &trans      &trans       &trans    &trans  &kp UNDERSCORE  &kp EQUAL      &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
-                                      &trans    &trans      &trans       &trans    &trans  &trans          &trans         &trans
+&trans  &trans           &trans       &trans              &trans               &trans                         &trans          &trans         &trans         &trans                &trans                 &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH            &kp DOLLAR           &kp PERCENT                    &kp CARET       &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp GRAVE        &kp TILDE    &kp LG(LEFT_BRACE)  &kt LG(RIGHT_BRACE)  &trans                         &kp MINUS       &kp PLUS       &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+&trans  &trans           &trans       &trans              &trans               &trans       &trans    &trans  &kp UNDERSCORE  &kp EQUAL      &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
+                                      &trans              &trans               &trans       &trans    &trans  &trans          &trans         &trans
             >;
         };
 
