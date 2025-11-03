@@ -128,11 +128,11 @@
 
         nav {
             bindings = <
-&trans  &trans            &trans        &trans        &trans          &trans                    &trans         &trans     &trans         &trans       &trans     &trans
-&trans  &trans            &trans        &trans        &trans          &trans                    &kp LG(LS(Z))  &kp LG(V)  &kp LG(C)      &kp LG(X)    &kp LG(Z)  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans                    &kp CAPSLOCK   &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &trans
-&trans  &trans            &trans        &trans        &trans          &trans  &trans    &trans  &kp INSERT     &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
-                                        &trans        &trans          &trans  &trans    &trans  &trans         &trans     &trans
+&trans  &trans            &trans        &trans        &trans          &trans                    &trans          &trans          &trans         &trans           &trans        &trans
+&trans  &trans            &trans        &trans        &trans          &trans                    &kp LG(LS(Z))   &kp LG(V)       &kp LG(C)      &kp LG(X)        &kp LG(Z)     &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp CAPSLOCK  &trans
+&trans  &trans            &trans        &trans        &trans          &trans  &trans    &trans  &kp INSERT      &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP      &kp END       &trans
+                                        &trans        &trans          &trans  &trans    &trans  &trans          &trans          &trans
             >;
         };
 
@@ -158,11 +158,11 @@
 
         button {
             bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans                           &trans         &trans     &trans     &trans     &trans     &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))                    &kp LS(LG(Z))  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)  &trans
-&trans  &kp LCTRL  &kp LALT   &kp LGUI   &kp LSHFT  &trans                           &trans         &kp LSHFT  &kp LGUI   &kp LALT   &kp LCTRL  &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))  &trans    &trans  &kp LS(LG(Z))  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)  &trans
-                              &trans     &trans     &trans         &trans    &trans  &trans         &trans     &trans
+&trans  &trans     &trans     &trans     &trans     &trans                                      &trans                     &trans     &trans     &trans     &trans     &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))                               &kp LS(LG(Z))              &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)  &trans
+&trans  &kp LCTRL  &kp LALT   &kp LGUI   &kp LSHFT  &kp LG(LS(LEFT_BRACKET))                    &kp LG(LS(RIGHT_BRACKET))  &kp LSHFT  &kp LGUI   &kp LALT   &kp LCTRL  &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))             &trans    &trans  &kp LS(LG(Z))              &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)  &trans
+                              &trans     &trans     &trans                    &trans    &trans  &trans                     &trans     &trans
             >;
         };
 
