@@ -46,7 +46,7 @@
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
+            key-positions = <28 31>;
         };
 
         grave {
