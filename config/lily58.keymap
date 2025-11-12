@@ -168,11 +168,11 @@
 
         num {
             bindings = <
-&trans  &trans     &trans  &trans  &trans   &trans                          &trans  &trans     &trans    &trans    &trans     &trans
-&trans  &kp LBKT   &kp N7  &kp N8  &kp N9   &kp RBKT                        &trans  &trans     &trans    &trans    &trans     &trans
-&trans  &kp SEMI   &kp N4  &kp N5  &kp N6   &kp EQUAL                       &trans  &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &trans
-&trans  &kp GRAVE  &kp N1  &kp N2  &kp N3   &kp BSLH   &trans       &trans  &trans  &trans     &trans    &trans    &trans     &trans
-                           &trans  &kp DOT  &kp N0     &kp MINUS    &trans  &trans  &trans     &trans
+&trans  &trans     &trans  &trans  &trans   &trans                               &trans  &trans     &trans    &trans    &trans     &trans
+&trans  &kp LBKT   &kp N7  &kp N8  &kp N9   &kp RBKT                             &trans  &trans     &trans    &trans    &trans     &trans
+&trans  &kp SEMI   &kp N4  &kp N5  &kp N6   &kp EQUAL                            &trans  &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &trans
+&trans  &kp GRAVE  &kp N1  &kp N2  &kp N3   &kp BSLH        &trans       &trans  &trans  &trans     &trans    &trans    &trans     &trans
+                           &trans  &kp DOT  &lt 1 NUMBER_0  &kp MINUS    &trans  &trans  &trans     &trans
             >;
         };
 
@@ -195,14 +195,24 @@
                          &trans  &kp C_MENU  &kp SPACE        &kp TAB    &trans  &trans  &trans     &trans
             >;
         };
+
+        dual {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans         &trans         &trans         &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp LC(LG(Q))  &kp LC(LG(W))  &kp LC(LG(E))  &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp LC(LG(H))  &kp LC(LG(J))  &kp LC(LG(K))  &kp LC(LG(L))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LC(LG(A))  &kp LC(LG(S))  &trans         &trans         &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans         &trans         &trans
+            >;
+        };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        adjust {
-            if-layers = <1 1>;
-            then-layer = <1>;
+        dual {
+            if-layers = <1 5>;
+            then-layer = <8>;
         };
     };
 };
