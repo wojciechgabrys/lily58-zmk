@@ -103,6 +103,11 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <22 21>;
         };
+
+        alternative_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <19 20 21>;
+        };
     };
 
     keymap {
